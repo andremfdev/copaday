@@ -26,14 +26,16 @@ header {
 #cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
   gap: 32px;
 }
 
 .card {
   padding: 32px 23px;
   text-align: center;
-  background: #1d1c19;
-  border-bottom: 2px solid #f7dd43;
+  background: #093328;
+  border-bottom: 3px solid #f0f002;
   border-radius: 6px;
   margin-bottom: auto;
 }
@@ -50,7 +52,7 @@ header {
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  color: #F7DD43;
+  color: #f0f002;
 }
 
 .card h2 span {
@@ -75,12 +77,12 @@ header {
 
 .card ul li+li {
   padding-top: 24px;
-  border-top: 1px solid #323238;
+  border-top: 1px solid #48484c;
 }
 
 .card ul li strong {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 125%;
   color: #E1E1E6;
 }
