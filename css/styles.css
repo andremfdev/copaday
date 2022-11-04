@@ -8,19 +8,35 @@
 :root {
   --text-color: #E1E1E6;
   --secondary-color: #f0f002;
+  --border-title-color: #746615;
+  --bg-card-color: #1A1F1B;
+  --bg: url(/assets/bg-yellow.svg);
+}
+
+body.blue {
+  --border-title-color: #338AF3;
+  --secondary-color: #338AF3;
+  --bg-card-color: #202024;
+  --bg: url(/assets/bg-blue.svg);
+}
+
+body.green {
+  --border-title-color: #047C3F;
+  --secondary-color: #047C3F;
+  --bg-card-color: #1D1C19;
+  --bg: url(/assets/bg-green.svg);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #121214;
-  background-image: url(/assets/bg-desktop.svg);
-  background-position-x: center;
-  background-position-y: -715px;
+  background: #121214 var(--bg) no-repeat top center/cover;
+  margin-bottom: 8rem;
 }
 
 #app {
   width: fit-content;
-  margin: 5.2rem auto;
+  margin: auto;
+  padding-top: 5.2rem;
 }
 
 header {
@@ -39,7 +55,7 @@ header {
 .card {
   padding: 32px 23px;
   text-align: center;
-  background: #093328;
+  background: var(--bg-card-color);
   border-bottom: 3px solid var(--secondary-color);
   border-radius: 6px;
   margin-bottom: auto;
@@ -57,13 +73,18 @@ header {
   font-weight: 400;
 }
 
+.card {
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
 .card h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   padding: 8px 16px;
-  border: 1px solid #746615;
+  border: 1px solid var(--border-title-color);
   border-radius: 6px;
 
   width: fit-content;
@@ -101,13 +122,17 @@ header {
   font-weight: 900;
   font-size: 32px;
   line-height: 125%;
-  color:var(--text-color);
+  color: var(--text-color);
   margin-bottom: 15px;
 }
 
 .card ul li .grupo {
   font-weight: 900;
   color: var(--secondary-color);
+}
+
+.card ul li .nation {
+  padding-top: 8px;
 }
 
 .card ul li strong,
@@ -118,11 +143,6 @@ header {
 .card ul li strong:hover,
 .card ul li img:hover {
   transform: scale(1.1);
-}
-
-.card {
-  opacity: 0;
-  animation: appear 1.5s forwards;
 }
 
 @keyframes appear {
