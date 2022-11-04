@@ -5,6 +5,11 @@
   list-style: none;
 }
 
+:root {
+  --text-color: #E1E1E6;
+  --secondary-color: #f0f002;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #121214;
@@ -35,7 +40,7 @@ header {
   padding: 32px 23px;
   text-align: center;
   background: #093328;
-  border-bottom: 3px solid #f0f002;
+  border-bottom: 3px solid var(--secondary-color);
   border-radius: 6px;
   margin-bottom: auto;
 }
@@ -48,7 +53,7 @@ header {
 }
 
 .horario p {
-  color: #E1E1E6;
+  color: var(--text-color);
   font-weight: 400;
 }
 
@@ -64,11 +69,11 @@ header {
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  color: #f0f002;
+  color: var(--secondary-color);
 }
 
 .card h2 span {
-  color: #E1E1E6;
+  color: var(--text-color);
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -96,13 +101,13 @@ header {
   font-weight: 900;
   font-size: 32px;
   line-height: 125%;
-  color: #E1E1E6;
+  color:var(--text-color);
   margin-bottom: 15px;
 }
 
 .card ul li .grupo {
   font-weight: 900;
-  color: #f0f002;
+  color: var(--secondary-color);
 }
 
 .card ul li strong,
