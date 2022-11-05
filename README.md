@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Criamos a partir do evento NLW Copa o Calendário de jogos da copa mundo, o qual busca deixar o usuário informado, em primeira mão, sobre os dias e horários dos jogos da copa. Trata-se de uma página onde seu maior foco é informar sobre o calendário dos jogos. 
 
-Abaixo em (Deploy) você pode acessar o projeto online e ver como ficou!
+Abaixo você pode acessar o projeto online e ver como ficou!
 
 ## 🌐 Deploy
 
