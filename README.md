@@ -30,16 +30,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git e Github
 
-
 ## 💻 Projeto
 
-Criamos a partir do evento NLW Copa o Calendário de jogos da copa mundo, o qual busca deixar o usuário informado, em primeira mão, sobre os dias e horários dos jogos da copa. Trata-se de uma página onde seu maior foco é informar sobre o calendário dos jogos. 
+Criamos a partir do evento NLW Copa o Calendário de jogos da copa mundo, o qual busca deixar o usuário informado, em primeira mão, sobre os dias e horários dos jogos da copa.
 
 Abaixo você pode acessar o projeto online e ver como ficou!
 
 ## 🌐 Deploy
 
-Segue o resultado online do projeto • [copaDAY](https://cb-wireframe-andremfdev.netlify.app/) 
+Segue o resultado online do projeto • [copaDAY](https://cb-wireframe-andremfdev.netlify.app/)
 
 ## 🔖 Layout
 

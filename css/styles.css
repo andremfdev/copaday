@@ -28,7 +28,7 @@ body.green {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Sora', sans-serif;
   background: #121214 var(--bg) no-repeat top center/cover;
   margin-bottom: 8rem;
 }
@@ -71,6 +71,7 @@ header {
 .horario p {
   color: var(--text-color);
   font-weight: 400;
+  font-size: 14px;
 }
 
 .card {
@@ -120,7 +121,7 @@ header {
 
 .card ul li strong {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 125%;
   color: var(--text-color);
   margin-bottom: 15px;
