@@ -60,6 +60,11 @@ nav ul li a {
   background-color: #121222;
   color: #F7DD43;
   font-weight: bold;
+  transition: all .4s;
+}
+
+nav ul li a:hover {
+  background-color: #047C3F;
 }
 
 #cards {
