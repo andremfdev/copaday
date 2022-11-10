@@ -44,7 +44,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #121316;
+  background-color: #202029;
   width: 100%;
   position: fixed;
   top: 0;
@@ -53,8 +53,12 @@ header {
   padding: 40px 0px;
 }
 
+header img {
+  width: 100%;
+  max-width: 100px;
+}
+
 nav ul {
-  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,12 +66,7 @@ nav ul {
 }
 
 nav ul li a {
-  /* border: 1px solid; */
-  /* padding: 10px 50px; */
-  /* border-radius: 6px; */
-  /* background-color: #121222; */
   color: #F7DD43;
-  /* font-weight: bold; */
   transition: all .4s;
 }
 
