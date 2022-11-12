@@ -7,34 +7,32 @@
 }
 
 :root {
-  --text-color: #E1E1E6;
+  --text-color: #e1e1e6;
   --secondary-color: #f0f002;
   --border-title-color: #746615;
-  --bg-card-color: #1A1F1B;
+  --bg-card-color: #1a1f1b;
   --bg: url(/assets/bg-yellow.svg);
 }
 
 body.blue {
-  --border-title-color: #338AF3;
-  --secondary-color: #338AF3;
+  --border-title-color: #338af3;
+  --secondary-color: #338af3;
   --bg-card-color: #202024;
   --bg: url(/assets/bg-blue.svg);
 }
 
 body.green {
-  --border-title-color: #047C3F;
-  --secondary-color: #047C3F;
-  --bg-card-color: #1D1C19;
+  --border-title-color: #047c3f;
+  --secondary-color: #047c3f;
+  --bg-card-color: #1d1c19;
   --bg: url(/assets/bg-green.svg);
 }
 
 body {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   background: #121214 var(--bg) no-repeat top center/cover;
   margin-bottom: 4rem;
 }
-
-
 
 #app {
   width: fit-content;
@@ -68,12 +66,16 @@ nav ul {
 }
 
 nav ul li a {
-  color: #F7DD43;
-  transition: all .4s;
+  color: #f7dd43;
+  transition: all 0.4s;
 }
 
 nav ul li a:hover {
-  color: #047C3F;
+  color: #047c3f;
+}
+
+#btn-mobile {
+  display: none;
 }
 
 #cards {
@@ -171,7 +173,7 @@ nav ul li a:hover {
 
 .card ul li strong,
 .card ul li img {
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .card ul li strong:hover,
@@ -195,7 +197,7 @@ nav ul li a:hover {
   width: 100%;
   max-width: 245px;
   border-radius: 50px;
-  border-bottom: 3px solid #338AF3;
+  border-bottom: 3px solid #338af3;
 }
 
 #about .info {
@@ -208,7 +210,7 @@ nav ul li a:hover {
 }
 
 #about .info h2 {
-  color: #338AF3;
+  color: #338af3;
   font-size: 34px;
   padding-bottom: 20px;
 }
@@ -236,11 +238,11 @@ footer .area-left {
 
 footer .area-left span a {
   color: var(--text-color);
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 footer .area-left span a:hover {
-  color: #338AF3;
+  color: #338af3;
 }
 
 footer .social-media ul {
@@ -253,11 +255,12 @@ footer .social-media ul li a {
   align-items: center;
   gap: 10px;
   color: var(--text-color);
-  transition: color .3s;
+  font-size: 14px;
+  transition: color 0.3s;
 }
 
 footer .social-media ul li a:hover {
-  color: #338AF3;
+  color: #338af3;
 }
 
 @keyframes appear {
@@ -271,7 +274,7 @@ footer .social-media ul li a:hover {
   }
 }
 
-@media(max-width:991px) {
+@media (max-width: 991px) {
   #about {
     flex-direction: column-reverse;
     align-items: center;
@@ -279,7 +282,6 @@ footer .social-media ul li a:hover {
   }
 
   #about .info h2 {
-
     margin: 0 auto;
   }
 
@@ -288,5 +290,74 @@ footer .social-media ul li a:hover {
     max-width: 715px;
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 125px;
+    right: 0px;
+    background-color: #202029;
+    z-index: 3000;
+    height: 0px;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 125px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu li {
+    padding: 1rem 0px;
+    margin: 0 1rem;
+    border-bottom: 2px solid #434343;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }

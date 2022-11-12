@@ -24,13 +24,26 @@
 
   <body class="blue">
     <div id="app">
-      <header>
-        <img
-          src="./assets/logo.svg"
-          alt="Logo do calendário da copa - NLW COPA"
-        />
-        <nav>
-          <ul>
+      <header id="header">
+        <a id="logo" href="./">
+          <img
+            src="./assets/logo.svg"
+            alt="Logo do calendário da copa - NLW COPA"
+          />
+        </a>
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu
+
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
             <li>
               <a href="https://www.twitch.tv/casimito" target="_blank"
                 >Jogos do Brasil &nbsp•&nbsp ao vivo 🔴</a
@@ -95,7 +108,7 @@
             <a href="https://github.com/andremfdev" target="_blank">
               <img
                 src="./assets/icon-github.svg"
-                width="30px"
+                width="20px"
                 alt="Ícone do
               Github"
               />
@@ -106,7 +119,7 @@
             <a href="https://www.linkedin.com/in/andremfdev/" target="_blank">
               <img
                 src="./assets/icon-linkedin.svg"
-                width="30px"
+                width="20px"
                 alt="Ícone do Linkedin"
               />
             </a>
@@ -115,7 +128,7 @@
             <a href="https://www.instagram.com/andremfdev/" target="_blank">
               <img
                 src="./assets/icon-instagram.svg"
-                width="30px"
+                width="20px"
                 alt="Ícone do Instagram"
               />
             </a>
@@ -124,7 +137,7 @@
             <a href="https://twitter.com/andremfdev" target="_blank">
               <img
                 src="./assets/icon-twitter.svg"
-                width="30px"
+                width="20px"
                 alt="Ícone do Twitter"
               />
             </a>
