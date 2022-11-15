@@ -40,6 +40,9 @@ body {
   padding-top: 5.2rem;
 }
 
+/************ STYLE HEADER & NAV ************/
+
+
 header {
   display: flex;
   align-items: center;
@@ -78,6 +81,21 @@ nav ul li a:hover {
   display: none;
 }
 
+/************ STYLE CARDS ************/
+
+.horario {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.horario p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
 #cards {
   display: flex;
   flex-wrap: wrap;
@@ -94,22 +112,6 @@ nav ul li a:hover {
   border-bottom: 3px solid var(--secondary-color);
   border-radius: 6px;
   margin-bottom: auto;
-}
-
-.horario {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-
-.horario p {
-  color: var(--text-color);
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.card {
   opacity: 0;
   animation: appear 1s forwards;
 }
@@ -181,6 +183,9 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
+/************ STYLE ABOUT ************/
+
+
 #about {
   position: relative;
   z-index: 2099;
@@ -221,6 +226,9 @@ nav ul li a:hover {
   font-weight: 300;
   line-height: 140%;
 }
+
+/************ STYLE FOOTER ************/
+
 
 footer {
   margin-top: 4rem;
@@ -263,6 +271,9 @@ footer .social-media ul li a:hover {
   color: #338af3;
 }
 
+
+/************ STYLE ANIMATION CARDS ************/
+
 @keyframes appear {
   0% {
     transform: translateY(-50px);
@@ -273,6 +284,9 @@ footer .social-media ul li a:hover {
     opacity: 1;
   }
 }
+
+
+/************ STYLE RESPONSIVE ************/
 
 @media (max-width: 991px) {
   #about {
@@ -293,6 +307,7 @@ footer .social-media ul li a:hover {
   }
 }
 
+/* media for style menu mobile */
 @media (max-width: 600px) {
   #menu {
     display: block;
