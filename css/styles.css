@@ -300,7 +300,8 @@ footer .social-media ul li a:hover {
     width: 100%;
     top: 125px;
     right: 0px;
-    background-color: #202029;
+    backdrop-filter: blur(10px);
+    background-color: #2020296c;
     z-index: 3000;
     height: 0px;
     transition: 0.6s;
