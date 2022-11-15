@@ -1,21 +1,31 @@
-const btnMobile = document.getElementById("btn-mobile")
+// const btnMobile = document.getElementById("btn-mobile")
 
-function toggleMenu(event) {
-  if (event.type === "touchstart") event.preventDefault()
+// function toggleMenu(event) {
+//   if (event.type === "touchstart") event.preventDefault()
 
-  const nav = document.getElementById("nav")
-  nav.classList.toggle("active")
-  const active = nav.classList.contains("active")
-  event.currentTarget.setAttribute("aria-expanded", active)
-  if (active) {
-    event.currentTarget.setAttribute("aria-label", "Fechar menu")
-  } else {
-    event.currentTarget.setAttribute("aria-label", "Abrir menu")
-  }
+//   const nav = document.getElementById("nav")
+//   nav.classList.toggle("active")
+//   const active = nav.classList.contains("active")
+//   event.currentTarget.setAttribute("aria-expanded", active)
+//   if (active) {
+//     event.currentTarget.setAttribute("aria-label", "Fechar menu")
+//   } else {
+//     event.currentTarget.setAttribute("aria-label", "Abrir menu")
+//   }
+// }
+
+// btnMobile.addEventListener("click", toggleMenu)
+// btnMobile.addEventListener("touchstart", toggleMenu)
+
+const menuDiv = document.getElementById("menu-mobile")
+const btnAnimar = document.getElementById("btn-menu")
+
+menuDiv.addEventListener("click", animarMenu)
+
+function animarMenu() {
+  menuDiv.classList.toggle("abrir")
+  btn - mobile.classList.toggle("ativo")
 }
-
-btnMobile.addEventListener("click", toggleMenu)
-btnMobile.addEventListener("touchstart", toggleMenu)
 
 function createGame(group, player1, hour, player2) {
   return `

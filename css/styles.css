@@ -77,9 +77,56 @@ nav ul li a:hover {
   color: #047c3f;
 }
 
+/* #btn-mobile {
+  display: none;
+} */
+
+/* STYLE MENU MOBILE */
+
+.menu-mobile {
+  background-color: #0000008c;
+  position: absolute;
+  top: 127px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.menu-mobile nav ul li a {
+  color white;
+  display: block;
+  padding: 20px 30px;
+  font-size: 16pt;
+}
+
+.menu-mobile nav ul li a:hover {
+  background-color: #000000ce;
+
+}
+
 #btn-mobile {
   display: none;
 }
+
+@media screen and (max-width:600px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile.abrir {
+    visibility: visible;
+    height: calc(100vh - 127px);
+  }
+
+  #btn-mobile {
+    display: block;
+  }
+}
+
 
 /************ STYLE CARDS ************/
 
@@ -173,7 +220,7 @@ nav ul li a:hover {
   padding-top: 8px;
 }
 
-.card ul li strong,
+/* .card ul li strong,
 .card ul li img {
   transition: transform 0.3s;
 }
@@ -181,14 +228,14 @@ nav ul li a:hover {
 .card ul li strong:hover,
 .card ul li img:hover {
   transform: scale(1.1);
-}
+} */
 
 /************ STYLE ABOUT ************/
 
 
 #about {
   position: relative;
-  z-index: 2099;
+  /* z-index: 2099; */
   margin-top: 240px;
   display: flex;
   padding: 60px 15px;
@@ -266,8 +313,8 @@ footer .social-media ul li a {
   font-size: 14px;
   transition: color 0.3s;
   background-color: #202029;
-    padding: 8px;
-    border-radius: 8px;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 footer .social-media ul li a:hover {
@@ -311,7 +358,7 @@ footer .social-media ul li a:hover {
 }
 
 /* media for style menu mobile */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   #menu {
     display: block;
     position: absolute;
@@ -380,4 +427,4 @@ footer .social-media ul li a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
-}
+} */
