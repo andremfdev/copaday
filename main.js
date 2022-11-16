@@ -32,8 +32,12 @@ const menuItens = document.querySelectorAll(".desk-menu a[href^="#" ]")
 
 
 menuItens.forEach (item => {
-  console.log(item);
+  item.addEventListener('click', scroolIdOnClick);
 })
+
+function scroolIdOnClick() {
+  console.log('clicou')
+}
 
 
 
