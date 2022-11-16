@@ -27,6 +27,9 @@ function animarMenu() {
   btnAnimar.classList.toggle("ativo")
 }
 
+const menuItens = document.querySelectorAll(".desk-menu a")
+console.log(menuItens)
+
 function createGame(group, player1, hour, player2) {
   return `
   <li>
