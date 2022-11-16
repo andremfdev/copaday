@@ -90,6 +90,7 @@ nav ul li a:hover {
   height: 0;
   visibility: hidden;
   transition: .5s;
+  overflow: hidden;
 }
 
 .menu-mobile nav a {
@@ -103,6 +104,10 @@ nav ul li a:hover {
   background-color: #000000be;
 }
 
+#btn-menu {
+  display: none;
+}
+
 @media screen and (max-width:600px) {
   .menu {
     display: none;
@@ -111,6 +116,10 @@ nav ul li a:hover {
   .menu-mobile.abrir {
     visibility: visible;
     height: calc(100vh - 127px);
+  }
+
+  #btn-menu {
+    display: block;
   }
 }
 
