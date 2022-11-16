@@ -144,3 +144,12 @@ document.querySelector("#cards").innerHTML =
       createGame("G", "Sérvia", "13:00h", "Suíça") +
       createGame("G", "Camarões", "16:00h", "Brasil")
   )
+
+function scrollToTop() {
+  window.scrollTo(0, 0)
+}
+
+window.addEventListener("scroll", function () {
+  let scroll = this.document.querySelector(".scrollTop")
+  scroll.classList.toggle("active", window.scrollY > 450)
+})

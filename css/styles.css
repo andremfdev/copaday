@@ -218,7 +218,6 @@ nav ul li a:hover {
 
 #about {
   position: relative;
-  z-index: 2099;
   margin-top: 240px;
   display: flex;
   padding: 60px 15px;
@@ -256,6 +255,33 @@ nav ul li a:hover {
   font-weight: 300;
   line-height: 140%;
   text-align: justify;
+}
+
+.scrollTop {
+  z-index: 9999;
+  outline: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  border-radius: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scrollTop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollTop:hover {
+  background-color: #f7f7f7;
+  color: #000;
 }
 
 /************ STYLE FOOTER ************/
