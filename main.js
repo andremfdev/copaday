@@ -27,8 +27,17 @@ function animarMenu() {
   btnAnimar.classList.toggle("ativo")
 }
 
-const menuItens = document.querySelectorAll(".desk-menu a")
-console.log(menuItens)
+// pegar na navegação todos os links internos que comecem por #
+const menuItens = document.querySelectorAll(".desk-menu a[href^="#" ]")
+
+
+menuItens.forEach (item => {
+  console.log(item);
+})
+
+
+
+
 
 function createGame(group, player1, hour, player2) {
   return `
