@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 :root {
@@ -252,21 +253,24 @@ nav ul li a:hover {
 .scrollTop {
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 9999;
   outline: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  padding: 5px 10px;
-  background-color: #FFF;
-  color: #fff;
-  border: 2px solid;
-  border-radius: 8px;
-  border-radius: 1px solid rgba(0, 0, 0, 0.608);
+  border: 1px solid #ffffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.5s ease 0s;
   opacity: 0;
   visibility: hidden;
+}
+
+.scrollTop .arrow {
+  width: 1rem;
 }
 
 .scrollTop.active {
@@ -275,8 +279,7 @@ nav ul li a:hover {
 }
 
 .scrollTop:hover {
-  background-color: #f7f7f7c8;
-  color: rgba(0, 0, 0, 0.608);
+  background-color: rgba(255, 255, 255, .1);
 }
 
 /************ STYLE FOOTER ************/
@@ -291,18 +294,33 @@ footer {
 }
 
 footer .area-left {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: #e1e1e695;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 footer .area-left span a {
   color: var(--text-color);
   transition: color 0.4s;
+  position: relative;
 }
 
-footer .area-left span a:hover {
-  color: #e1e1e695;
+footer .area-left span a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  opacity: .4;
+  background: #fff;
+  -webkit-transition: .4s;
+  transition: all .4s;
+}
+
+footer .area-left span a:hover::after {
+  opacity: 1;
 }
 
 footer .social-media ul {
@@ -426,5 +444,12 @@ footer .social-media ul li a:hover {
     flex-direction: column;
     text-align: center;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .scrollTop {
+    bottom: 15px;
+    right: 15px;
   }
 }
