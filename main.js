@@ -153,3 +153,27 @@ window.addEventListener("scroll", function () {
   let scroll = this.document.querySelector(".scrollTop")
   scroll.classList.toggle("active", window.scrollY > 450)
 })
+
+const menuItens = document.querySelectorAll('.navigation a[href^="#"]')
+
+menuItens.forEach((item) => {
+  item.addEventListener("click", scrollToIdOnClick)
+})
+
+function scrollToIdOnClick(event) {
+  event.preventDefault()
+  const to = getScrollTopByHref(event.target) - 127
+  scrollToPosition(to)
+}
+
+function scrollToPosition(to) {
+  window.scroll({
+    top: to,
+    behavior: "smooth",
+  })
+}
+
+function getScrollTopByHref(element) {
+  const id = element.getAttribute("href")
+  return document.querySelector(id).offsetTop
+}
