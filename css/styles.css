@@ -8,6 +8,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 :root {
   --text-color: #e1e1e6;
   --secondary-color: #f0f002;
@@ -224,7 +228,8 @@ nav ul li a:hover {
   width: 100%;
   max-width: 225px;
   border-radius: 8px;
-  border-bottom: 3px solid #338af3;
+  box-shadow: -5px 5px 5px #0000005d;
+  animation: floatingImageAbout 6s infinite alternate;
 }
 
 #about .info {
@@ -271,6 +276,7 @@ nav ul li a:hover {
 
 .scrollTop .arrow {
   width: 1rem;
+  animation: floatingScrollToTop 1.5s infinite alternate;
 }
 
 .scrollTop.active {
@@ -355,6 +361,37 @@ footer .social-media ul li a:hover {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes floatingScrollToTop {
+
+  0%,
+  40% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes floatingImageAbout {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(-10px);
+  }
+
+  66% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 
