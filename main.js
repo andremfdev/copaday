@@ -47,7 +47,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "20/11",
     "domingo",
-    createGame("A", "Catar", "13:00h", "Equador")
+    createGame("A", "Qatar", "13:00h", "Equador")
   ) +
   createCard(
     "21/11",
@@ -84,7 +84,7 @@ document.querySelector("#cards").innerHTML =
     "25/11",
     "sexta",
     createGame("B", "Gales", "07:00h", "Irã") +
-      createGame("A", "Catar", "10:00h", "Senegal") +
+      createGame("A", "Qatar", "10:00h", "Senegal") +
       createGame("A", "Holanda", "13:00h", "Equador") +
       createGame("B", "Inglaterra", "16:00h", "Estados Unidos")
   ) +
@@ -115,33 +115,33 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "29/11",
     "terça",
-    createGame("A", "Equador", "07:00h", "Senegal") +
-      createGame("A", "Holanda", "10:00h", "Catar") +
-      createGame("B", "Irã", "13:00h", "Estados Unidos") +
+    createGame("A", "Equador", "12:00h", "Senegal") +
+      createGame("A", "Holanda", "12:00h", "Qatar") +
+      createGame("B", "Irã", "16:00h", "Estados Unidos") +
       createGame("B", "Gales", "16:00h", "Inglaterra")
   ) +
   createCard(
     "30/11",
     "quarta",
-    createGame("D", "Tunísia", "07:00h", "França") +
-      createGame("D", "Austrália", "10:00h", "Dinamarca") +
-      createGame("C", "Polônia", "13:00h", "Argentina") +
+    createGame("D", "Tunísia", "12:00h", "França") +
+      createGame("D", "Austrália", "12:00h", "Dinamarca") +
+      createGame("C", "Polônia", "16:00h", "Argentina") +
       createGame("C", "Arábia Saudita", "16:00h", "México")
   ) +
   createCard(
     "01/12",
     "quinta",
-    createGame("F", "Croácia", "07:00h", "Bélgica") +
-      createGame("F", "Canadá", "10:00h", "Marrocos") +
-      createGame("E", "Japão", "13:00h", "Espanha") +
+    createGame("F", "Croácia", "12:00h", "Bélgica") +
+      createGame("F", "Canadá", "12:00h", "Marrocos") +
+      createGame("E", "Japão", "16:00h", "Espanha") +
       createGame("E", "Costa Rica", "16:00h", "Alemanha")
   ) +
   createCard(
     "02/12",
     "sexta",
-    createGame("H", "Coréia do Sul", "07:00h", "Portugal") +
-      createGame("H", "Gana", "10:00h", "Uruguai") +
-      createGame("G", "Sérvia", "13:00h", "Suíça") +
+    createGame("H", "Coréia do Sul", "12:00h", "Portugal") +
+      createGame("H", "Gana", "12:00h", "Uruguai") +
+      createGame("G", "Sérvia", "16:00h", "Suíça") +
       createGame("G", "Camarões", "16:00h", "Brasil")
   )
 
