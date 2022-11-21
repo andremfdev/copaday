@@ -158,7 +158,7 @@ nav ul li a:hover {
 
 .card .brasil-live h4 {
   color: #f7dd43;
-  animation: textBlink .6s infinite;
+  animation: textBlink .7s infinite;
 }
 
 .card h2 {
@@ -407,7 +407,7 @@ footer .social-media ul li a:hover {
 
 @keyframes textBlink {
   0% {
-    color: #f7dd43;
+    color: #efda61;
   }
 
   66% {
@@ -415,7 +415,7 @@ footer .social-media ul li a:hover {
   }
 
   100% {
-    color: #f7dd43;
+    color: #efda61;
   }
 }
 
