@@ -91,6 +91,7 @@ nav ul li a:hover {
   z-index: 5000;
   background-color: #0000008c;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   position: absolute;
   top: 127px;
   left: 0;
