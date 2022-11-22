@@ -159,6 +159,25 @@ nav ul li a:hover {
 .card .brasil-live h4 {
   color: #f7dd43;
   animation: textBlink .7s infinite;
+  transition: all .4s;
+}
+
+.card .brasil-live h4::after {
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  left: 71px;
+  width: 100%;
+  height: 1px;
+  opacity: .4;
+  background: #fff;
+  -webkit-transition: .4s;
+  transition: all .4s;
+  max-width: 55%;
+}
+
+.card .brasil-live h4:hover::after {
+  opacity: 1;
 }
 
 .card h2 {
