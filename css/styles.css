@@ -34,6 +34,13 @@ body.green {
   --bg: url(/assets/bg-green.svg);
 }
 
+body.yellow {
+  --border-title-color: #746615;
+  --secondary-color: #746615;
+  --bg-card-color: #202024;
+  --bg: url(/assets/bg-yellow.svg);
+}
+
 body {
   font-family: "Sora", sans-serif;
   background: #121214 var(--bg) no-repeat top center/cover;

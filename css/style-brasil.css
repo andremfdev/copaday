@@ -30,9 +30,17 @@ body.blue {
 body.green {
   --border-title-color: #047c3f;
   --secondary-color: #047c3f;
-  --bg-card-color: #1d1c19;
+  --bg-card-color: #202024;
   --bg: url(/assets/bg-green.svg);
 }
+
+body.yellow {
+  --border-title-color: #746615;
+  --secondary-color: #746615;
+  --bg-card-color: #202024;
+  --bg: url(/assets/bg-yellow.svg);
+}
+
 
 body {
   font-family: "Sora", sans-serif;
@@ -134,7 +142,7 @@ nav ul li a:hover {
 
 #cards {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   padding: 0 15px;
   gap: 32px;
@@ -426,15 +434,15 @@ footer .social-media ul li a:hover {
 
 @keyframes textBlink {
   0% {
-    color: #19d577;
+    color: #ffff64;
   }
 
   66% {
-    color: #19b919;
+    color: #f0f002;
   }
 
   100% {
-    color: #19d577;
+    color: #ffff64;
   }
 }
 
