@@ -41,7 +41,7 @@ function createCard(date, day, games) {
 
          
 <div class="brasil-live">
-<a href="https://www.twitch.tv/casimito" target="_blank"><h4>🔴 Assitir AO VIVO 🔴</h4></a>
+<a href="https://www.twitch.tv/casimito" target="_blank"><h4>🔴 Assistir AO VIVO 🔴</h4></a>
 
   
   </div>
