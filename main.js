@@ -74,7 +74,7 @@ document.querySelector("#cards").innerHTML =
     createGame("G", "Suíça", "1 X 0", "Camarões") +
       createGame("H", "Uruguai", "0 X 0", "Coréia do Sul") +
       createGame("H", "Portugal", "3 X 2", "Gana") +
-      createGame("G", "Brasil", "16:00h", "Sérvia")
+      createGame("G", "Brasil", "2 X 0", "Sérvia")
   ) +
   createCard(
     "25/11",
