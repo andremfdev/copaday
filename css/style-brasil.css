@@ -142,7 +142,6 @@ nav ul li a:hover {
 
 #cards {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   padding: 0 15px;
   gap: 32px;
@@ -464,6 +463,10 @@ footer .social-media ul li a:hover {
     width: 100%;
     max-width: 715px;
     margin: 0 auto;
+  }
+
+  #cards {
+  flex-direction: column;
   }
 }
 
