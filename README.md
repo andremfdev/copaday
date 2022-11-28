@@ -38,11 +38,33 @@ Abaixo você pode acessar o projeto online e ver como ficou!
 
 ## 🌐 Deploy
 
-Segue o resultado online do projeto • [copaDAY](https://cb-wireframe-andremfdev.netlify.app/)
+Segue o resultado online do projeto • [copaDAY](https://andremfdev.github.io/copaday/)
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Layout disponibilizado pelo evento do NLW da Rocketseat. Por razões de lei, não posso conceder acesso ao projeto original. Segue em PNG a base do design.
+<br>
+<br>
+<br>
+
+<h3 align="center"><strong>Desktop model</strong></h3>
+<br>
+<p align="center">
+  <img 
+    src="./assets-readme/copaday-desk.jpg"
+    width="700px" 
+    style="display: inline; border-radius: 15px;"
+  />
+
+<br>
+<h3 align="center"><strong>Mobile model</strong></h3>
+<br>
+<p align="center">
+  <img 
+    src="./assets-readme/copaday-mobile.jpg"
+    width="400px" 
+    style="display: inline; border-radius: 15px;"
+  />
 
 ## :memo: Licença
 
@@ -50,4 +72,10 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Made by [andremfdev](https://www.linkedin.com/in/andremfdev/)
+<img alt="andremfdev" title="andremfdev" src="https://avatars.githubusercontent.com/u/82080573?v=4" height="100" width="100" border="1"/>
+
+Made by andremfdev 👋
+
+[![Linkedin Badge](https://img.shields.io/badge/-andremfdev-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andremfdev/)](https://www.linkedin.com/in/andremfdev/)
+[![Twitter Badge](https://img.shields.io/badge/andremfdev-1DA1F2?style=flat-square&logo=twitter&logoColor=white&link=https://www.twitter.com/andremfdev/)](https://www.twitter.com/andremfdev/)
+[![Twitter Badge](https://img.shields.io/badge/andremfdev-E4405F?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/andremfdev/)](https://www.instagram.com/andremfdev/)
