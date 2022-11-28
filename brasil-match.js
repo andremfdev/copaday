@@ -56,8 +56,8 @@ function createCard(date, day, games) {
 }
 
 document.querySelector("#cards").innerHTML =
-  createCard("24/11", "quinta", createGame("G", "Brasil", "16:00h", "Sérvia")) +
-  createCard("28/11", "segunda", createGame("G", "Brasil", "13:00h", "Suíça")) +
+  createCard("24/11", "quinta", createGame("G", "Brasil", "2 x 0", "Sérvia")) +
+  createCard("28/11", "segunda", createGame("G", "Brasil", "1 x 0", "Suíça")) +
   createCard("02/12", "sexta", createGame("G", "Camarões", "16:00h", "Brasil"))
 
 function scrollToTop() {
