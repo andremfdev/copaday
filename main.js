@@ -87,25 +87,25 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "26/11",
     "sabado",
-    createGame("D", "Tunísia", "07:00h", "Austrália") +
-      createGame("C", "Polônia", "10:00h", "Arábia Saudita") +
-      createGame("D", "França", "13:00h", "Dinamarca") +
-      createGame("C", "Argentina", "16:00h", "México")
+    createGame("D", "Tunísia", "0 X 1", "Austrália") +
+      createGame("C", "Polônia", "2 X 0", "Arábia Saudita") +
+      createGame("D", "França", "2 X 1", "Dinamarca") +
+      createGame("C", "Argentina", "2 X 0", "México")
   ) +
   createCard(
     "27/11",
     "domingo",
-    createGame("E", "Japão", "07:00h", "Costa Rica") +
-      createGame("F", "Bélgica", "10:00h", "Marrocos") +
-      createGame("F", "Croácia", "13:00h", "Canadá") +
-      createGame("E", "Espanha", "16:00h", "Alemanha")
+    createGame("E", "Japão", "0 X 1", "Costa Rica") +
+      createGame("F", "Bélgica", "0 X 2", "Marrocos") +
+      createGame("F", "Croácia", "4 X 1", "Canadá") +
+      createGame("E", "Espanha", "1 X 1", "Alemanha")
   ) +
   createCard(
     "28/11",
     "segunda",
-    createGame("G", "Camarões", "07:00h", "Sérvia") +
-      createGame("H", "Coréia do Sul", "10:00h", "Gana") +
-      createGame("G", "Brasil", "13:00h", "Suíça") +
+    createGame("G", "Camarões", "3 X 3", "Sérvia") +
+      createGame("H", "Coréia do Sul", "2 X 3", "Gana") +
+      createGame("G", "Brasil", "1 X 0", "Suíça") +
       createGame("H", "Portugal", "16:00h", "Uruguai")
   ) +
   createCard(
@@ -152,7 +152,7 @@ window.addEventListener("scroll", function () {
 
 const menuItens = document.querySelectorAll('.navigation a[href^="#"]')
 
-menuItens.forEach(item => {
+menuItens.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick)
 })
 
@@ -165,7 +165,7 @@ function scrollToIdOnClick(event) {
 function scrollToPosition(to) {
   window.scroll({
     top: to,
-    behavior: "smooth"
+    behavior: "smooth",
   })
 }
 
