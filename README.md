@@ -9,7 +9,8 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-autor">Autor</a>
 </p>
 
 <p align="center">
@@ -30,15 +31,21 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git e Github
 
+---
+
 ## 💻 Projeto
 
 Criamos a partir do evento NLW Copa o Calendário de jogos da copa mundo, o qual busca deixar o usuário informado, em primeira mão, sobre os dias e horários dos jogos da copa.
 
 Abaixo você pode acessar o projeto online e ver como ficou!
 
+---
+
 ## 🌐 Deploy
 
 Segue o resultado online do projeto • [copaDAY](https://andremfdev.github.io/copaday/)
+
+---
 
 ## 🔖 Layout
 
@@ -71,6 +78,8 @@ Layout disponibilizado pelo evento do NLW da Rocketseat. Por razões de lei, nã
 Esse projeto está sob a licença MIT.
 
 ---
+
+## 👨‍💻 Autor
 
 <img alt="andremfdev" title="andremfdev" src="https://avatars.githubusercontent.com/u/82080573?v=4" height="100" width="100" border="1"/>
 
