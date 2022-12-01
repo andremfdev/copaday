@@ -119,16 +119,16 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "30/11",
     "quarta",
-    createGame("D", "Tunísia", "12:00h", "França") +
-      createGame("D", "Austrália", "12:00h", "Dinamarca") +
-      createGame("C", "Polônia", "16:00h", "Argentina") +
-      createGame("C", "Arábia Saudita", "16:00h", "México")
+    createGame("D", "Tunísia", "1 X 0", "França") +
+      createGame("D", "Austrália", "1 X 0", "Dinamarca") +
+      createGame("C", "Polônia", "0 X 2", "Argentina") +
+      createGame("C", "Arábia Saudita", "1 X 2", "México")
   ) +
   createCard(
     "01/12",
     "quinta",
-    createGame("F", "Croácia", "12:00h", "Bélgica") +
-      createGame("F", "Canadá", "12:00h", "Marrocos") +
+    createGame("F", "Croácia", "0 X 0", "Bélgica") +
+      createGame("F", "Canadá", "1 X 2", "Marrocos") +
       createGame("E", "Japão", "16:00h", "Espanha") +
       createGame("E", "Costa Rica", "16:00h", "Alemanha")
   ) +
@@ -152,7 +152,7 @@ window.addEventListener("scroll", function () {
 
 const menuItens = document.querySelectorAll('.navigation a[href^="#"]')
 
-menuItens.forEach(item => {
+menuItens.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick)
 })
 
@@ -165,7 +165,7 @@ function scrollToIdOnClick(event) {
 function scrollToPosition(to) {
   window.scroll({
     top: to,
-    behavior: "smooth"
+    behavior: "smooth",
   })
 }
 
