@@ -129,8 +129,8 @@ document.querySelector("#cards").innerHTML =
     "quinta",
     createGame("F", "Croácia", "0 X 0", "Bélgica") +
       createGame("F", "Canadá", "1 X 2", "Marrocos") +
-      createGame("E", "Japão", "16:00h", "Espanha") +
-      createGame("E", "Costa Rica", "16:00h", "Alemanha")
+      createGame("E", "Japão", "2 X 1", "Espanha") +
+      createGame("E", "Costa Rica", "2 X 4", "Alemanha")
   ) +
   createCard(
     "02/12",
@@ -152,7 +152,7 @@ window.addEventListener("scroll", function () {
 
 const menuItens = document.querySelectorAll('.navigation a[href^="#"]')
 
-menuItens.forEach((item) => {
+menuItens.forEach(item => {
   item.addEventListener("click", scrollToIdOnClick)
 })
 
@@ -165,7 +165,7 @@ function scrollToIdOnClick(event) {
 function scrollToPosition(to) {
   window.scroll({
     top: to,
-    behavior: "smooth",
+    behavior: "smooth"
   })
 }
 
