@@ -1,192 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="shortcut icon"
-      href="./assets/favicon-copaday.svg"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" href="./assets/favicon-copaday.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-    <title>CopaDAY - Calendário da Copa Do Mundo</title>
-  </head>
+  <link rel="stylesheet" href="./css/styles.css" />
 
-  <body class="blue">
-    <div id="app">
-      <header id="header">
-        <a id="logo" href="./">
-          <img src="./assets/logo.svg" alt="Logo do calendário da Copa Day" />
-        </a>
+  <title>CopaDAY - Calendário da Copa Do Mundo</title>
+</head>
 
-        <div class="menu">
-          <nav class="desk-menu navigation">
-            <ul>
-              <li>
-                <a href="./brasil-matchday.html"
-                  >🟢🟡&nbsp;Jogos do Brasil &nbsp- &nbspAO VIVO &nbsp;🟡🟢</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.google.com/search?q=copa+do+mundo+fifa&oq=copa+do+mundo+fifa&aqs=chrome.0.35i39j46i131i433i512j69i59j0i131i433i512l2j0i512j69i61j69i60.6795j1j7&sourceid=chrome&ie=UTF-8#cobssid=s&sie=lg;/m/0fp_8fm;2;/m/030q7;st;fp;1;;;"
-                  target="_blank"
-                  >Classificação</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvS0wyMHZNR1p3WHpobWJSSUZjSFF0UWxJb0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
-                  target="_blank"
-                  >Notícias da Copa</a
-                >
-              </li>
-              <li>
-                <a href="#about">Sobre</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <button onclick="animarMenu()" id="btn-menu">
-          Menu
-
-          <span id="hamburger"></span>
-        </button>
-
-        <div class="menu-mobile" id="menu-mobile">
-          <nav class="navigation" id="nav">
-            <ul>
-              <li>
-                <a href="./brasil-matchday.html"
-                  >🟢🟡 Jogos do Brasil &nbsp- &nbspAO VIVO 🟡🟢</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.google.com/search?q=copa+do+mundo+fifa&oq=copa+do+mundo+fifa&aqs=chrome.0.35i39j46i131i433i512j69i59j0i131i433i512l2j0i512j69i61j69i60.6795j1j7&sourceid=chrome&ie=UTF-8#cobssid=s&sie=lg;/m/0fp_8fm;2;/m/030q7;st;fp;1;;;"
-                  target="_blank"
-                  >Classificação</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvS0wyMHZNR1p3WHpobWJSSUZjSFF0UWxJb0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
-                  target="_blank"
-                  >Notícias da Copa</a
-                >
-              </li>
-              <li>
-                <a href="#about">Sobre</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <main id="cards"></main>
+<body class="blue">
+  <div id="app">
+    <div class="navbar-avisos">
+      <a href="./mata-mata.html">
+        <h6>ACESSE</h6>
+        <p>FASE DE MATA-MATA</p>
+      </a>
     </div>
+    <header id="header">
+      <a id="logo" href="./">
+        <img src="./assets/logo.svg" alt="Logo do calendário da Copa Day" />
+      </a>
 
-    <div id="about">
-      <div class="image-perfil">
-        <img
-          src="./assets-readme/Perfil - social media.jpg"
-          alt="Foto de perfil do André Marques, criador do projeto"
-        />
+      <div class="menu">
+        <nav class="desk-menu navigation">
+          <ul>
+            <li>
+              <a href="./brasil-matchday.html">🟢🟡&nbsp;Jogos do Brasil &nbsp- &nbspAO VIVO &nbsp;🟡🟢</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/search?q=copa+do+mundo+fifa&oq=copa+do+mundo+fifa&aqs=chrome.0.35i39j46i131i433i512j69i59j0i131i433i512l2j0i512j69i61j69i60.6795j1j7&sourceid=chrome&ie=UTF-8#cobssid=s&sie=lg;/m/0fp_8fm;2;/m/030q7;st;fp;1;;;"
+                target="_blank">Classificação</a>
+            </li>
+            <li>
+              <a href="https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvS0wyMHZNR1p3WHpobWJSSUZjSFF0UWxJb0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
+                target="_blank">Notícias da Copa</a>
+            </li>
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="info">
-        <h2>Sobre o projeto</h2>
-        <p>
-          Olá, me chamo André Marques e desenvolvi esse projeto num evento
-          chamado NLW (New Level Week) da Rocketseat. A proposta consiste em
-          disponibilizar para vocês, nossos usuários, um calendário dos jogos da
-          Copa do Mundo com seus respectivos horários, para que você não perca
-          nenhum jogo.
-        </p>
-        <p>
-          Aproveitei para ampliar um pouco mais o projeto, implementando algumas
-          outras funcionalidades, como um acesso direto ao jogos AO VIVO do
-          BRASIL, totalmente de graça, trasmitido pelo canal do Casimiro na
-          twitch. Você também tem a oportunidade de acompanhar a classificação e
-          as notícias em tempo real de tudo o que está rolando na Copa do Mundo
-          FIFA 2022 - Catar
-        </p>
+
+      <button onclick="animarMenu()" id="btn-menu">
+        Menu
+
+        <span id="hamburger"></span>
+      </button>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <nav class="navigation" id="nav">
+          <ul>
+            <li>
+              <a href="./brasil-matchday.html">🟢🟡 Jogos do Brasil &nbsp- &nbspAO VIVO 🟡🟢</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/search?q=copa+do+mundo+fifa&oq=copa+do+mundo+fifa&aqs=chrome.0.35i39j46i131i433i512j69i59j0i131i433i512l2j0i512j69i61j69i60.6795j1j7&sourceid=chrome&ie=UTF-8#cobssid=s&sie=lg;/m/0fp_8fm;2;/m/030q7;st;fp;1;;;"
+                target="_blank">Classificação</a>
+            </li>
+            <li>
+              <a href="https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvS0wyMHZNR1p3WHpobWJSSUZjSFF0UWxJb0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
+                target="_blank">Notícias da Copa</a>
+            </li>
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+
+    <main id="cards"></main>
+  </div>
+
+  <div id="about">
+    <div class="image-perfil">
+      <img src="./assets-readme/Perfil - social media.jpg" alt="Foto de perfil do André Marques, criador do projeto" />
     </div>
-
-    <div onclick="scrollToTop()" class="scrollTop">
-      <img
-        class="arrow"
-        src="./assets/arrow-1.svg"
-        height="13px"
-        alt="Seta para cima, voltar ao topo"
-      />
+    <div class="info">
+      <h2>Sobre o projeto</h2>
+      <p>
+        Olá, me chamo André Marques e desenvolvi esse projeto num evento
+        chamado NLW (New Level Week) da Rocketseat. A proposta consiste em
+        disponibilizar para vocês, nossos usuários, um calendário dos jogos da
+        Copa do Mundo com seus respectivos horários, para que você não perca
+        nenhum jogo.
+      </p>
+      <p>
+        Aproveitei para ampliar um pouco mais o projeto, implementando algumas
+        outras funcionalidades, como um acesso direto ao jogos AO VIVO do
+        BRASIL, totalmente de graça, trasmitido pelo canal do Casimiro na
+        twitch. Você também tem a oportunidade de acompanhar a classificação e
+        as notícias em tempo real de tudo o que está rolando na Copa do Mundo
+        FIFA 2022 - Catar
+      </p>
     </div>
+  </div>
 
-    <footer>
-      <div class="area-left">
-        <span
-          >Product by
-          <a href="https://www.linkedin.com/in/andremfdev/" target="_blank"
-            >André Marques • andremfdev</a
-          ></span
-        >
-        <p>Developer front-end study</p>
-      </div>
-      <div class="social-media">
-        <ul>
-          <li>
-            <a href="https://github.com/andremfdev" target="_blank">
-              <img
-                src="./assets/icon-github.svg"
-                width="20px"
-                alt="Ícone do
-              Github"
-              />
-              <span>andremfdev</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/andremfdev/" target="_blank">
-              <img
-                src="./assets/icon-linkedin.svg"
-                width="20px"
-                alt="Ícone do Linkedin"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/andremfdev/" target="_blank">
-              <img
-                src="./assets/icon-instagram.svg"
-                width="20px"
-                alt="Ícone do Instagram"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/andremfdev" target="_blank">
-              <img
-                src="./assets/icon-twitter.svg"
-                width="20px"
-                alt="Ícone do Twitter"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+  <div onclick="scrollToTop()" class="scrollTop">
+    <img class="arrow" src="./assets/arrow-1.svg" height="13px" alt="Seta para cima, voltar ao topo" />
+  </div>
 
-    <script src="./main.js"></script>
-  </body>
+  <footer>
+    <div class="area-left">
+      <span>Product by
+        <a href="https://www.linkedin.com/in/andremfdev/" target="_blank">André Marques • andremfdev</a></span>
+      <p>Developer front-end study</p>
+    </div>
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="https://github.com/andremfdev" target="_blank">
+            <img src="./assets/icon-github.svg" width="20px" alt="Ícone do
+              Github" />
+            <span>andremfdev</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/andremfdev/" target="_blank">
+            <img src="./assets/icon-linkedin.svg" width="20px" alt="Ícone do Linkedin" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/andremfdev/" target="_blank">
+            <img src="./assets/icon-instagram.svg" width="20px" alt="Ícone do Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/andremfdev" target="_blank">
+            <img src="./assets/icon-twitter.svg" width="20px" alt="Ícone do Twitter" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
 </html>
