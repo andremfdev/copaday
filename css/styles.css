@@ -57,13 +57,22 @@ body {
 
 .navbar-avisos {
       padding: 8px 0;
-    background: linear-gradient(88deg,#f9c1f2 0,#b3acfc 105%);
+    background: linear-gradient(88deg,#c4ec74 0,#39b48e 105%);
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+        position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+}
+
+.navbar-avisos a {
+  display: flex;
 }
 
 .navbar-avisos h6 {
@@ -81,6 +90,7 @@ body {
     border-radius: 1000px;
     margin: 0 12px 0 0;
     letter-spacing: -.02em;
+    font-size: 12px;
 }
 .navbar-avisos p {
   color: black;
@@ -92,6 +102,7 @@ body {
     align-items: center;
     font: 500 14px/24px "DM Sans",sans-serif;
     opacity: 1;
+    font-size: 12px;
 }
 
 .navbar-avisos::after {
