@@ -56,19 +56,19 @@ body {
 /************ STYLE HEADER & NAV ************/
 
 .navbar-avisos {
-      padding: 8px 0;
-    background: linear-gradient(88deg,#c4ec74 0,#39b48e 105%);
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-        position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    width: 100%;
+  padding: 8px 0;
+  background: linear-gradient(88deg, #c4ec74 0, #39b48e 105%);
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
 }
 
 .navbar-avisos a {
@@ -76,40 +76,42 @@ body {
 }
 
 .navbar-avisos h6 {
-  font: 500 14px/1 "DM Sans",sans-serif;
-    background: #000;
-    color: #fff!important;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 24px;
-    padding: 0 12px;
-    border-radius: 1000px;
-    margin: 0 12px 0 0;
-    letter-spacing: -.02em;
-    font-size: 12px;
+  font: 500 14px/1 "DM Sans", sans-serif;
+  background: #000;
+  color: #fff !important;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 24px;
+  padding: 0 12px;
+  border-radius: 1000px;
+  margin: 0 12px 0 0;
+  letter-spacing: -.02em;
+  font-size: 12px;
 }
+
 .navbar-avisos p {
   color: black;
-      display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font: 500 14px/24px "DM Sans",sans-serif;
-    opacity: 1;
-    font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font: 500 14px/24px "DM Sans", sans-serif;
+  opacity: 1;
+  font-size: 12px;
 }
 
 .navbar-avisos::after {
   content: url(../assets/arrow-mata-mata.svg);
-    margin: 0 0 0 12px;
-    -webkit-transition: .4s;
-    transition: .4s;
+  margin: 0 0 0 12px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  animation: floatingArrowNavbarAvisos .7s infinite;
 }
 
 header {
@@ -456,6 +458,26 @@ footer .social-media ul li a:hover {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes floatingArrowNavbarAvisos {
+  0% {
+    transform: translateY(0);
+    transform: translateX(0);
+
+  }
+
+  66% {
+    transform: translateY(-2px);
+    transform: translateX(-2px);
+
+  }
+
+  100% {
+    transform: translateY(0);
+    transform: translateX(0);
+
   }
 }
 
