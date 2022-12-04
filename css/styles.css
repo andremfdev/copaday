@@ -111,7 +111,7 @@ body {
   margin: 0 0 0 12px;
   -webkit-transition: .4s;
   transition: .4s;
-  animation: floatingArrowNavbarAvisos .7s infinite;
+  animation: floatingArrowNavbarAvisos all .7s infinite;
 }
 
 header {
