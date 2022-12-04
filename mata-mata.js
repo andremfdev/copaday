@@ -53,7 +53,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "04/12",
     "domingo",
-    createGame("Oitavas de Final", "França", "12:00h", "Polônia") +
+    createGame("Oitavas de Final", "França", "3 x 1", "Polônia") +
       createGame("Oitavas de Final", "Inglaterra", "16:00h", "Senegal")
   ) +
   createCard(
@@ -80,7 +80,7 @@ window.addEventListener("scroll", function () {
 
 const menuItens = document.querySelectorAll('.navigation a[href^="#"]')
 
-menuItens.forEach(item => {
+menuItens.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick)
 })
 
@@ -93,7 +93,7 @@ function scrollToIdOnClick(event) {
 function scrollToPosition(to) {
   window.scroll({
     top: to,
-    behavior: "smooth"
+    behavior: "smooth",
   })
 }
 

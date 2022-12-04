@@ -74,7 +74,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "05/12",
     "segunda",
-    createGame("Oitavas de Final", "Brasil", "12:00h", "Coreia do Sul")
+    createGame("Oitavas de Final", "Brasil", "16:00h", "Coréia do Sul")
   )
 
 function scrollToTop() {
@@ -88,7 +88,7 @@ window.addEventListener("scroll", function () {
 
 const menuItens = document.querySelectorAll('.navigation a[href^="#"]')
 
-menuItens.forEach(item => {
+menuItens.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick)
 })
 
@@ -101,7 +101,7 @@ function scrollToIdOnClick(event) {
 function scrollToPosition(to) {
   window.scroll({
     top: to,
-    behavior: "smooth"
+    behavior: "smooth",
   })
 }
 
