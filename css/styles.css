@@ -106,12 +106,12 @@ body {
   font-size: 12px;
 }
 
-.navbar-avisos::after {
+.navbar-avisos p::after {
   content: url(../assets/arrow-mata-mata.svg);
   margin: 0 0 0 12px;
   -webkit-transition: .4s;
   transition: .4s;
-  animation: floatingArrowNavbarAvisos all .7s infinite;
+  animation: floatingArrowNavbarAvisos .7s infinite;
 }
 
 header {
@@ -463,20 +463,17 @@ footer .social-media ul li a:hover {
 
 @keyframes floatingArrowNavbarAvisos {
   0% {
-    transform: translateY(0);
-    transform: translateX(0);
+    transform: translate(0%, 0%);
 
   }
 
   66% {
-    transform: translateY(-2px);
-    transform: translateX(-2px);
+    transform: translate(10%, -10%);
 
   }
 
   100% {
-    transform: translateY(0);
-    transform: translateX(0);
+    transform: translate(0%, 0%);
 
   }
 }
