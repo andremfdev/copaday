@@ -91,10 +91,12 @@ body {
   margin: 0 12px 0 0;
   letter-spacing: -.02em;
   font-size: 12px;
+  font-weight: bold;
 }
 
 .navbar-avisos p {
   color: black;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
