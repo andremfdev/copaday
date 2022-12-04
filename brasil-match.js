@@ -11,7 +11,7 @@ function animarMenu() {
 function createGame(group, player1, hour, player2) {
   return `
   <li>
-  <p class="grupo">Grupo ${group}</p>
+  <p class="grupo">${group}</p>
   <div class="horario">
   <div style="width: 90px; height: 80px;">
     <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" />
@@ -56,9 +56,26 @@ function createCard(date, day, games) {
 }
 
 document.querySelector("#cards").innerHTML =
-  createCard("24/11", "quinta", createGame("G", "Brasil", "2 X 0", "Sérvia")) +
-  createCard("28/11", "segunda", createGame("G", "Brasil", "1 X 0", "Suíça")) +
-  createCard("02/12", "sexta", createGame("G", "Camarões", "1 x 0", "Brasil"))
+  createCard(
+    "24/11",
+    "quinta",
+    createGame("Grupo G", "Brasil", "2 X 0", "Sérvia")
+  ) +
+  createCard(
+    "28/11",
+    "segunda",
+    createGame("Grupo G", "Brasil", "1 X 0", "Suíça")
+  ) +
+  createCard(
+    "02/12",
+    "sexta",
+    createGame("Grupo G", "Camarões", "1 x 0", "Brasil")
+  ) +
+  createCard(
+    "05/12",
+    "segunda",
+    createGame("Oitavas de Final", "Brasil", "12:00h", "Coreia do Sul")
+  )
 
 function scrollToTop() {
   window.scrollTo(0, 0)
