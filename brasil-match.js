@@ -78,7 +78,7 @@ document.querySelector("#cards").innerHTML =
   ) +
   createCard(
     "09/12",
-    "segunda",
+    "sexta",
     createGame("Quartas de Final", "Brasil", "12:00h", "Croácia")
 
 function scrollToTop() {
