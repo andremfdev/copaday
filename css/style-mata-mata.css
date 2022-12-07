@@ -184,7 +184,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 270px;
+  width: 310px;
 }
 
 .card ul li {
@@ -201,7 +201,7 @@ nav ul li a:hover {
 
 .card ul li strong {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 125%;
   color: var(--text-color);
   margin-bottom: 15px;
