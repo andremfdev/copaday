@@ -65,7 +65,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "06/12",
     "terça",
-    createGame("Oitavas de Final", "Marrocos", "0(3) X 0(0)", "Espanha") +
+    createGame("Oitavas de Final", "Marrocos", "0(3) X 0(0)" color="red" , "Espanha") +
       createGame("Oitavas de Final", "Portugal", "6 X 1", "Suíça")
   )  +
   createCard(
