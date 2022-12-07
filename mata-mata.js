@@ -60,13 +60,13 @@ document.querySelector("#cards").innerHTML =
     "05/12",
     "segunda",
     createGame("Oitavas de Final", "Japão", "1(1) X 1(3)", "Croácia") +
-      createGame("Oitavas de Final", "Brasil", "16:00h", "Coréia do Sul")
+      createGame("Oitavas de Final", "Brasil", "4 x 1", "Coréia do Sul")
   ) +
   createCard(
     "06/12",
     "terça",
-    createGame("Oitavas de Final", "Marrocos", "12:00h", "Espanha") +
-      createGame("Oitavas de Final", "Portugal", "16:00h", "Suíça")
+    createGame("Oitavas de Final", "Marrocos", "0(3) X 0(0), "Espanha") +
+      createGame("Oitavas de Final", "Portugal", "6 X 1", "Suíça")
   )
 
 function scrollToTop() {
