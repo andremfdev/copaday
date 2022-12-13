@@ -79,6 +79,16 @@ document.querySelector("#cards").innerHTML =
     "sábado",
     createGame("Quartas de Final", "Marrocos", "1 X 0", "Portugal") +
       createGame("Quartas de Final", "Inglaterra", "1 X 2", "França")
+  ) +
+  createCard(
+    "13/12",
+    "terça",
+    createGame("Semi Final", "Argentina", "16:00h", "Croácia")
+  ) +
+  createCard(
+    "14/12",
+    "quarta",
+    createGame("Semi Final", "França", "16:00h", "Marrocos")
   )
 function scrollToTop() {
   window.scrollTo(0, 0)
@@ -91,7 +101,7 @@ window.addEventListener("scroll", function () {
 
 const menuItens = document.querySelectorAll('.navigation a[href^="#"]')
 
-menuItens.forEach(item => {
+menuItens.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick)
 })
 
@@ -104,7 +114,7 @@ function scrollToIdOnClick(event) {
 function scrollToPosition(to) {
   window.scroll({
     top: to,
-    behavior: "smooth"
+    behavior: "smooth",
   })
 }
 
