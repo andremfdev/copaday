@@ -89,6 +89,16 @@ document.querySelector("#cards").innerHTML =
     "14/12",
     "quarta",
     createGame("Semi Final", "França", "2 X 0", "Marrocos")
+  ) +
+  createCard(
+    "17/12",
+    "sábado",
+    createGame("Disputa 3º Lugar", "Marrocos", "12:00h", "Croácia")
+  ) +
+  createCard(
+    "18/12",
+    "domingo",
+    createGame("Final", "Argentina", "12:00h", "França")
   )
 function scrollToTop() {
   window.scrollTo(0, 0)
