@@ -98,7 +98,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "18/12",
     "domingo",
-    createGame("Final", "Argentina", "12:00h", "França")
+    createGame("Final", "Argentina", "(4)3 X 3(2)", "França")
   )
 function scrollToTop() {
   window.scrollTo(0, 0)
